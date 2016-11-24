@@ -35,6 +35,6 @@ exports.city = function(req,res){
         headLine : headLine,
         city : cityName,
         images : images
-    })
+    });
 
 }
