@@ -5,7 +5,7 @@ var routes = require('./routes/route');
 var app = express();
 
 app.use(express.static(__dirname + '/public'));
-app.set('view-engine','handlebars');
+app.set('view engine','handlebars');
 
 app.engine('handlebars', expHbrs({defaultLayout:'main'}));
 
