@@ -14,6 +14,8 @@ exports.city = function(req,res){
     if(cityName === 'delhi'){
         title = 'New Delhi';
         headLine = 'New Delhi is the capital of India.';
+        images.push(5);
+        images.push(6);
     }
     else if(cityName === 'mumbai'){
         title = 'Mumbai';
@@ -26,8 +28,6 @@ exports.city = function(req,res){
     else if(cityName === 'goa'){
         title = 'Goa';
         headLine = 'City of best beaches';
-        images.push(5);
-        images.push(6);
     }
 
     res.render('city',{
