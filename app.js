@@ -13,7 +13,7 @@ app.get('/',routes.home);
 app.get('/:city',routes.city);
 
 // creating server on specified port
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 var server = app.listen(port, function(req, res){
     console.log('server is running on : '+ port);
 });
