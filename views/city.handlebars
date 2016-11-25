@@ -1,10 +1,11 @@
 <div class="container">
           <div class="row">
+            <div class="heading text-center well">
+                {{headLine}}
+            </div>
             {{#each images}}
-               <div class="col-md-6">
-                  <div class="thumbnail">
-                  <img src="/images/{{../city}}/{{../city}}-{{this}}.jpg"/>
-                  </div>
+               <div class="col-md-6 text-center well">
+                  <img src="/images/{{../city}}/{{../city}}-{{this}}.jpg" width="550" height="400" style="padding:10px;"/>
                </div>
             {{/each}}
           </div>
